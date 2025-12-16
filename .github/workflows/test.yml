@@ -1,0 +1,10 @@
+name: test
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          printf '\033]8;;http://example.com\033\\This is a link\033]8;;\033\\\n'
