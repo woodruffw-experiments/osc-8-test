@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
+          printf '\033[31;1;4m\033]8;;http://example.com\033\\This is a link\033]8;;\033\\\n'
+      
           printf '\033]8;;http://example.com\033\\This is a link\033]8;;\033\\\n'
 
           printf '\e]8;;http://example.com\e\\This is a link\e]8;;\e\\\n'
